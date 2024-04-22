@@ -1,0 +1,140 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 80px 100px;
+    background-color: #F4F6FC;
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.btn-primary {
+    height: 52px;
+    width: 150px;
+    background-color: #072AC8;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary {
+    height: 52px;
+    width: 150px;
+    color: #072AC8;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-link {
+    height: 52px;
+    width: 150px;
+    color: #6B708D;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*------------------------------------------------*/
+/* HEADER */
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.menu {
+    color: #6B708D;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.active-link {
+    color: #072AC8;
+}
+
+
+
+
+/*------------------------------------------------*/
+/* FOOTER */
+
+footer{
+    color: #6B708D;
+    font-size: 17px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.logo-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-address img {
+    height: 30px;
+}
+
+.logo-address p {
+    margin: 0;
+    padding: 16px 0px 0px 0px;
+}
+
+.f-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.s-links {
+    width: 435px;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+.s-links li {
+    width: 105px;
+    text-align: left;
+}
+
