@@ -10,36 +10,109 @@
     
     <header>
         <nav>
-            <div>
-                <img src="/assets/logos/circle.svg" alt="Circle Logo">
-            </div>
-            <ul class="menu">
-                <li><a href="/html/1_Home.html">Home</a></li>
-                <li class="active-link"><a href="/html/2_Project.html">Projects</a></li>
-                <li><a href="">Services</a></li>
-            </ul>
-            <button class="btn-contact  btn-primary"><a href="/html/3_Contact.html">Contact Us</a></button>
+          <div>
+            <img src="/assets/logos/circle.svg" alt="Circle Logo" />
+          </div>
+          <ul class="menu">
+            <li><a href="/html/1_Home.html">Home</a></li>
+            <li class="active-link"><a href="#ourprojects">Projects</a></li>
+            <li><a href="/html/4_404.html">Services</a></li>
+          </ul>
+          <button class="btn-contact btn-primary">
+            <a href="/html/3_Contact.html">Contact Us</a>
+          </button>
         </nav>
-    </header>
+      </header>
 
+      <section class="openProject">
+        <div id="projectInfo">
+          <h3 id="projectTitle"></h3>
+          <div class="topic-date">
+            <h4 id="projectTopic" class="body-intro-m"></h4>
+            <p id="projectDate" class="body-intro-r"></p>
+          </div>
+        </div>
+        <div class="project-asset">
+          <div id="filterBlur"></div>
+          <div id="projectCover"></div>
+        </div>
+        <div id="projectDescription" class="body-intro-r">
+        </div>
+      </section>
 
-    <footer>
+      <section class="otherProjects" id="ourprojects">
+        <h4>Other Projects</h4>
+        <div class="projects">
+          <div class="project-card">
+            <img src="" alt="" class="cover" />
+            <div class="project-card-text">
+              <div>
+                <h4 class="title"></h4>
+                <p class="text-r description"></p>
+              </div>
+              <button class="btn-secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="" alt="" class="cover" />
+            <div class="project-card-text">
+              <div>
+                <h4 class="title"></h4>
+                <p class="text-r description"></p>
+              </div>
+              <button class="btn-secondary">Learn more</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="" alt="" class="cover" />
+            <div class="project-card-text">
+              <div>
+                <h4 class="title"></h4>
+                <p class="text-r description"></p>
+              </div>
+              <button class="btn-secondary">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="questions">
+          <h3>Do you have any questions?</h3>
+          <p class="text-r">Let us help you!</p>
+        </div>
+        <div class="input">
+          <div class="email">
+            <img
+              src="/assets/newsletter/icon/mail.svg"
+              alt="envelope"
+              class="envelope"
+            />
+            <input type="email" placeholder="Enter your email" class="text-r" />
+          </div>
+          <button type="submit">Subscribe</button>
+        </div>
+      </section>
+
+      <footer>
         <div class="logo-address">
-            <img src="/assets/logos/circle.svg" alt="Circle Logo">
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+          <img src="/assets/logos/circle.svg" alt="Circle Logo" />
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
         <div class="f-links">
-            <ul class="s-links">
-                <li><a href="">Team</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-            <ul class="s-links">
-                <li><a href="">Press</a></li>
-                <li><a href="/html/2_Project.html">Projects</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
+          <ul class="s-links">
+            <li><a href="">Team</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+          <ul class="s-links">
+            <li><a href="">Press</a></li>
+            <li><a href="/html/2_Project.html">Projects</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
         </div>
-    </footer>
+      </footer>
+
+      <script src="/javascript/2_Project.js"></script>
 </body>
 </html>

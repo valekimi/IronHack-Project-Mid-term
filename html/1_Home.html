@@ -14,8 +14,8 @@
         </div>
         <ul class="menu">
           <li class="active-link"><a href="/html/1_Home.html">Home</a></li>
-          <li><a href="/html/2_Project.html">Projects</a></li>
-          <li><a href="">Services</a></li>
+          <li><a href="#ourprojects">Projects</a></li>
+          <li><a href="#allservices">Services</a></li>
         </ul>
         <button class="btn-contact btn-primary">
           <a href="/html/3_Contact.html">Contact Us</a>
@@ -62,7 +62,7 @@
       <img src="/assets/logos/amazon-logo.svg" alt="amazon" />
     </section>
 
-    <section class="recentproject">
+    <section class="recentproject" id="ourprojects">
       <h3>Recent Projects</h3>
       <div class="projects">
         <div class="project-card">
@@ -72,7 +72,7 @@
               <h4>Simplify</h4>
               <p class="text-r">UI Design & App Development</p>
             </div>
-            <button class="btn-secondary">Learn more</button>
+            <button class="btn-secondary"><a href="/html/2_Project.html">Learn more</a></button>
           </div>
         </div>
         <div class="project-card">
@@ -135,7 +135,7 @@
       />
     </section>
 
-    <section class="ourservices">
+    <section class="ourservices" id="allservices">
       <h3>Our Services</h3>
       <div class="services">
         <div class="services-card">
@@ -189,8 +189,12 @@
       </div>
       <div class="input">
         <div class="email">
-          <img src="/assets/newsletter/icon/mail.svg" alt="envelope" class="envelope">
-          <input type="email" placeholder="Enter your email" class="text-r">
+          <img
+            src="/assets/newsletter/icon/mail.svg"
+            alt="envelope"
+            class="envelope"
+          />
+          <input type="email" placeholder="Enter your email" class="text-r" />
         </div>
         <button type="submit">Subscribe</button>
       </div>

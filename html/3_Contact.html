@@ -10,37 +10,67 @@
 
     <header>
         <nav>
-            <div>
-                <img src="/assets/logos/circle.svg" alt="Circle Logo">
-            </div>
-            <ul class="menu">
-                <li><a href="/html/1_Home.html">Home</a></li>
-                <li><a href="/html/2_Project.html">Projects</a></li>
-                <li><a href="">Services</a></li>
-            </ul>
-            <button class="btn-contact  btn-primary"><a href="/html/3_Contact.html">Contact Us</a></button>
+          <div>
+            <img src="/assets/logos/circle.svg" alt="Circle Logo" />
+          </div>
+          <ul class="menu">
+            <li><a href="/html/1_Home.html">Home</a></li>
+            <li><a href="/html/4_404.html">Projects</a></li>
+            <li><a href="/html/4_404.html">Services</a></li>
+          </ul>
+          <button class="btn-contact btn-primary">
+            <a href="/html/3_Contact.html">Contact Us</a>
+          </button>
         </nav>
-    </header>
+      </header>
 
+      <section>
+        <h1>Contact Us</h1>
+        <form action="" id="contactForm">
+            <div class="name">
+                <label for="fullname" class="body-intro-r">Full Name*</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" class="text-r" required >
+                <div id="fullnameError" class="error-message"></div>
+            </div>
+            <div class="email-phone">
+                <div class="email-address">
+                    <label for="email" class="body-intro-r">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="text-r" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="phone-number">
+                    <label for="phone" class="body-intro-r">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="text-r" required>
+                    <div id="phoneError" class="error-message"></div>
+                </div>
+            </div>
+            <div class="long-message">
+                <label for="message" class="body-intro-r">Message</label>
+                <textarea id="message" name="message" rows="10" placeholder="Write your message here..." class="text-r"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+      </section>
 
-    <footer>
+      <footer>
         <div class="logo-address">
-            <img src="/assets/logos/circle.svg" alt="Circle Logo">
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+          <img src="/assets/logos/circle.svg" alt="Circle Logo" />
+          <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
         <div class="f-links">
-            <ul class="s-links">
-                <li><a href="">Team</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-            <ul class="s-links">
-                <li><a href="">Press</a></li>
-                <li><a href="/html/2_Project.html">Projects</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
+          <ul class="s-links">
+            <li><a href="">Team</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+          <ul class="s-links">
+            <li><a href="">Press</a></li>
+            <li><a href="/html/2_Project.html">Projects</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
         </div>
-    </footer>
+      </footer>
     
+      <script src="/javascript/3_Contact.js"></script>
 </body>
 </html>

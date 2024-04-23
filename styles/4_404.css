@@ -17,7 +17,6 @@ body {
   width: 150px;
   background-color: #072ac8;
   color: white;
-  font-family: "Roboto";
   font-size: 17px;
   font-weight: 400;
   text-decoration: none;
@@ -33,7 +32,6 @@ body {
   height: 52px;
   width: 150px;
   color: #072ac8;
-  font-family: "Roboto";
   font-size: 17px;
   font-weight: 400;
   text-decoration: none;
@@ -50,7 +48,6 @@ body {
   height: 52px;
   width: 150px;
   color: #6b708d;
-  font-family: "Roboto";
   font-size: 17px;
   font-weight: 400;
   text-decoration: none;
@@ -160,132 +157,3 @@ nav {
 .active-link {
   color: #072ac8;
 }
-
-
-/*------------------------------------------------*/
-/*FORM*/
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.email-phone {
-    width: 100%;
-    display: flex;
-    gap: 32px;
-}
-
-.email-address {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.phone-number {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.long-message {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-textarea {
-    background-color: #E6E9F1;
-    border: none;
-    padding-top: 22px;
-    padding-left: 24px;
-    font-family: "Roboto";
-}
-
-.name input,
-.email-address input,
-.phone-number input {
-    background-color: #E6E9F1;
-    height: 80px;
-    border: none;
-    padding-left: 24px;
-    display: flex;
-    align-items: center;
-    font-family: "Roboto";
-}
-
-form button {
-    height: 80px;
-    width: 100%;
-    background-color: #072ac8;
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-
-
-/*------------------------------------------------*/
-/* FOOTER */
-
-footer {
-    max-width: 1100px;
-    color: #6b708d;
-    font-size: 17px;
-    font-weight: 300;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 80px;
-  }
-  
-  .logo-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 240px;
-  }
-  
-  .logo-address img {
-    height: 30px;
-  }
-  
-  .logo-address p {
-    margin: 0;
-    padding: 16px 0px 0px 0px;
-  }
-  
-  .f-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .s-links {
-    width: 435px;
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-  }
-  
-  .s-links li {
-    width: 105px;
-    text-align: left;
-  }
-  
