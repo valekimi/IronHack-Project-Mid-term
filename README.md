@@ -1,4 +1,6 @@
-# IRONHACK - FRONT END - PROJECT MID TERM
+# IRONHACK - FRONT END
+
+# PROJECT MID TERM
 
 Website for a fictional web design company. This includes a few pages:
 a home page
@@ -15,12 +17,12 @@ a contact page with a form.
 
 
 ====================================
--DAY 1
+DAY 1
 
 Creation of all the pages in HTML, CSS.
 Stored all the images in the Asset folder.
 
-# HOME - PAGE
+## HOME - PAGE
 Built the HTML and CSS
 
 Reflections and things i found important or hard to achieve:
@@ -39,7 +41,7 @@ Using postition:relative in the parent and position:absolute to the child and th
 ====================================
 DAY 2
 
-# CONTACT - PAGE
+## CONTACT - PAGE
 Built the HTML and CSS
 
 Reflections and things i found important or hard to achieve:
@@ -48,7 +50,7 @@ Reflections and things i found important or hard to achieve:
 - Input type can be declared also in CSS directly in this format: ex .email input[type="email"]
 
 
-# PROJECT 1 - PAGE
+## PROJECT 1 - PAGE
 Built the HTML and CSS
 
 Reflections and things i found important or hard to achieve:
@@ -59,7 +61,7 @@ Reflections and things i found important or hard to achieve:
 - i am having some issue in adapting the blur background to the size i need as seems not working in the same way of the main image
 
 
-# FETCH - Project 1
+## FETCH - Project 1
 Connected the DOM
 
 Reflections and things i found important or hard to achieve:
@@ -70,7 +72,7 @@ Reflections and things i found important or hard to achieve:
 - here i could apply the correct shadow to the project cover, Jarko helped me out and made me realize i was applying the css to the parent and not to the child.
 
 
-# FETCH - Other Projects
+## FETCH - Other Projects
 Connected the DOM
 
 Reflections and things i found important or hard to achieve:
@@ -82,7 +84,7 @@ Reflections and things i found important or hard to achieve:
 ====================================
 DAY 3
 
-# VALIDATION - Contact Form
+## VALIDATION - Contact Form
 
 Reflections and things i found important or hard to achieve:
 
@@ -90,7 +92,7 @@ Reflections and things i found important or hard to achieve:
 - i managed to assign the error alert if an input field has not been filled, however I didn't manage to set a red border of the input when the user gets the error message.
 
 
-# MEDIA QUERY -  Home
+## MEDIA QUERY -  Home
 
 - i was able to create the burger menu when the screen is smaller then 780px
 - Couldn't understand why the justify content(Space between) was not working - Prof. Jarko advice to do not use display:flex in body as this trigger mistakes in the FE.
