@@ -165,7 +165,12 @@ nav {
 /*------------------------------------------------*/
 /*FORM*/
 
-form {
+.form {
+  max-width: 1100px;
+  padding-bottom: 80px;
+}
+
+#contactForm {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -239,6 +244,10 @@ form button {
     padding: 0;
   }
 
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+  }
 
 /*------------------------------------------------*/
 /* FOOTER */

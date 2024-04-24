@@ -24,12 +24,12 @@
         </nav>
       </header>
 
-      <section>
+      <section class="form">
         <h1>Contact Us</h1>
         <form action="" id="contactForm">
             <div class="name">
                 <label for="fullname" class="body-intro-r">Full Name*</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" class="text-r" required >
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" class="text-r" required>
                 <div id="fullnameError" class="error-message"></div>
             </div>
             <div class="email-phone">
@@ -46,7 +46,8 @@
             </div>
             <div class="long-message">
                 <label for="message" class="body-intro-r">Message</label>
-                <textarea id="message" name="message" rows="10" placeholder="Write your message here..." class="text-r"></textarea>
+                <textarea id="message" name="message" rows="10" placeholder="Write your message here..." class="text-r" required></textarea>
+                <div id="textareaError" class="error-message"></div>
             </div>
             <button type="submit">Submit</button>
         </form>

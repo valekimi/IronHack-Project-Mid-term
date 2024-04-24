@@ -44,13 +44,18 @@ getData();
 const projectCards = document.querySelectorAll('.project-card');
 
 fetch('https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects')
+
   .then(response => response.json())
   .then(data => {
-    for (let i = 0; i < Math.min(data.length, 3); i++) {
-      const projectData = data[i];
-      projectCards[i].querySelector('.cover').src = projectData.image;
-      projectCards[i].querySelector('.title').textContent = projectData.name;
-      projectCards[i].querySelector('.description').textContent = projectData.description;
+
+    const reverseData = data.slice().reverse();
+
+    for (let i = 1; i < Math.min(reverseData.length, 4); i++) {
+      const projectData = reverseData[i];
+      projectCards[i-1].querySelector('.cover').src = projectData.image;
+      projectCards[i-1].querySelector('.title').textContent = projectData.name;
+      projectCards[i-1].querySelector('.description').textContent = projectData.description;
     }
   })
   .catch(error => console.error('Error fetching data:', error));
+  

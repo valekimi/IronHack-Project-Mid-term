@@ -9,7 +9,9 @@
   <body>
     <header>
       <nav>
-        <div>
+        <div class="logo-container">
+          <!-- Burger Menu for small screens -->
+          <button class="hamburger-menu-btn">&#9776;</button>
           <img src="/assets/logos/circle.svg" alt="Circle Logo" />
         </div>
         <ul class="menu">
@@ -22,6 +24,16 @@
         </button>
       </nav>
     </header>
+
+    <!-- Menu page for small screens -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="/html/1_Home.html">Home</a></li>
+        <li><a href="#ourprojects">Projects</a></li>
+        <li><a href="#allservices">Services</a></li>
+        <li><a href="/html/3_Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
 
     <section class="hero">
       <div class="hero-text">
@@ -72,7 +84,9 @@
               <h4>Simplify</h4>
               <p class="text-r">UI Design & App Development</p>
             </div>
-            <button class="btn-secondary"><a href="/html/2_Project.html">Learn more</a></button>
+            <button class="btn-secondary">
+              <a href="/html/2_Project.html">Learn more</a>
+            </button>
           </div>
         </div>
         <div class="project-card">
@@ -218,5 +232,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="/javascript/1_Home.js"></script>
   </body>
 </html>

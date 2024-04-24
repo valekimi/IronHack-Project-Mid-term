@@ -4,10 +4,8 @@ body {
   margin: 80px 100px;
   background-color: #f4f6fc;
   font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto; /*with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -145,6 +143,7 @@ nav {
   align-items: center;
   padding-bottom: 80px;
   max-width: 1100px;
+  width: 100%;
 }
 
 .menu {
@@ -163,7 +162,12 @@ nav {
 /*------------------------------------------------*/
 /* PROJECT DETAILS */
 
-.project-info {
+.openProject {
+  max-width: 1100px;
+  width: 100%;
+}
+
+#projectInfo {
   display: flex;
   flex-direction: column;
 }
@@ -196,12 +200,12 @@ nav {
   opacity: 0.5;
 }
 
-
 /*------------------------------------------------*/
 /* PROJECTS */
 
 .otherProjects {
   max-width: 1100px;
+  width: 100%;
   padding: 80px 0px 80px 0px;
   display: flex;
   flex-direction: column;
@@ -249,122 +253,121 @@ nav {
   color: #6b708d;
 }
 
-
 /*------------------------------------------------*/
 /* SUBSCRIBE */
 
 .subscribe {
-    background-color: #FFC600;
-    max-width: 1200px;
-    padding: 80px;
-    margin: 80px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-  }
-  
-  .questions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .questions p {
-    color: #292e47;
-  }
-  
-  .input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .email {
-    height: 80px;
-    width: 390px;
-    background-color: #ffffff;
-    padding-left: 24px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .email input[type="email"] {
-    border: none;
-    height: 70px;
-    width: 300px;
-  }
-  
-  .envelope {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .subscribe button {
-    height: 80px;
-    width: 198px;
-    background-color: #072ac8;
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
+  background-color: #ffc600;
+  max-width: 1100px;
+  width: 100%;
+  padding: 80px 0;
+  margin: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
 
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.questions p {
+  color: #292e47;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.email {
+  height: 80px;
+  width: 390px;
+  background-color: #ffffff;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.email input[type="email"] {
+  border: none;
+  height: 70px;
+  width: 300px;
+}
+
+.envelope {
+  width: 30px;
+  height: 30px;
+}
+
+.subscribe button {
+  height: 80px;
+  width: 198px;
+  background-color: #072ac8;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
 
 /*------------------------------------------------*/
 /* FOOTER */
 
 footer {
-    max-width: 1100px;
-    color: #6b708d;
-    font-size: 17px;
-    font-weight: 300;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 80px;
-  }
-  
-  .logo-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 240px;
-  }
-  
-  .logo-address img {
-    height: 30px;
-  }
-  
-  .logo-address p {
-    margin: 0;
-    padding: 16px 0px 0px 0px;
-  }
-  
-  .f-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .s-links {
-    width: 435px;
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-  }
-  
-  .s-links li {
-    width: 105px;
-    text-align: left;
-  }
-  
+  max-width: 1100px;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.logo-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 240px;
+}
+
+.logo-address img {
+  height: 30px;
+}
+
+.logo-address p {
+  margin: 0;
+  padding: 16px 0px 0px 0px;
+}
+
+.f-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.s-links {
+  width: 435px;
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+}
+
+.s-links li {
+  width: 105px;
+  text-align: left;
+}

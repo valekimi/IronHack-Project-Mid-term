@@ -2,43 +2,41 @@
 //===============================
 /* FORM VALIDATIONS */
 
-document.addEventListener("DOMContentLoaded", function() {
-    const fullnameInput = document.getElementById('fullname');
-    const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
-    const form = document.getElementById('myForm');
-    form.addEventListener('submit', function(event) {
-        // Prevent form submission
-        event.preventDefault();
-        
-        // Validate inputs
-        validateInput(fullnameInput, 'fullnameError', 'Please provide your full name.');
-        validateInput(emailInput, 'emailError', 'Please provide a valid email address.');
-        validateInput(phoneInput, 'phoneError', 'Please provide your phone number.');
-    });
-
-    function validateInput(input, errorId, errorMessage) {
-        const value = input.value.trim();
-        const errorElement = document.getElementById(errorId);
-        
-        if (value === '') {
-            input.classList.add('error');
-            errorElement.textContent = errorMessage;
-        } else {
-            input.classList.remove('error');
-            errorElement.textContent = '';
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const inputs = document.querySelectorAll('input[required], textarea[required]');
+    let isValid = true;
+    inputs.forEach(function(input) {
+        if (!input.value.trim()) {
+            isValid = false;
+            showError(input);
         }
+    });
+    if (!isValid) {
+        event.preventDefault();
     }
-    // Add blur event listeners to inputs
-    fullnameInput.addEventListener('blur', function() {
-        validateInput(fullnameInput, 'fullnameError', 'Please provide your full name.');
-    });
+});
 
-    emailInput.addEventListener('blur', function() {
-        validateInput(emailInput, 'emailError', 'Please provide a valid email address.');
-    });
+function showError(element) {
+    element.style.borderColor = '#FF0000'; // somehow this is not applied
+    const errorMessageElement = element.nextElementSibling;
 
-    phoneInput.addEventListener('blur', function() {
-        validateInput(phoneInput, 'phoneError', 'Please provide your phone number.');
+    if (errorMessageElement && errorMessageElement.classList.contains('error-message')) {
+        errorMessageElement.textContent = 'This field is required.';
+    }
+}
+
+document.querySelectorAll('input[required], textarea[required]').forEach(function(input) {
+    input.addEventListener('blur', function() {
+        if (!this.value.trim()) {
+            showError(this);
+
+        } else {
+            this.style.borderColor = '';
+            const errorMessageElement = this.nextElementSibling;
+
+            if (errorMessageElement && errorMessageElement.classList.contains('error-message')) {
+                errorMessageElement.textContent = '';
+            }
+        }
     });
 });

@@ -4,10 +4,8 @@ body {
   margin: 80px 100px;
   background-color: #f4f6fc;
   font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto; /*with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -134,6 +132,11 @@ ul {
   list-style-type: none;
 }
 
+section {
+  display: flex;
+  align-items: center;
+}
+
 /*------------------------------------------------*/
 /* HEADER */
 
@@ -144,6 +147,7 @@ nav {
   align-items: center;
   padding-bottom: 80px;
   max-width: 1100px;
+  width: 100%;
 }
 
 .menu {
@@ -159,11 +163,20 @@ nav {
   color: #072ac8;
 }
 
+.hamburger-menu-btn{
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 /*------------------------------------------------*/
 /* HERO */
 
 .hero {
   max-width: 1100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,6 +232,7 @@ nav {
 
 .partners {
   max-width: 1100px;
+  width: 100%;
   padding: 120px 0px 120px 0px;
   display: flex;
   justify-content: space-between;
@@ -227,7 +241,6 @@ nav {
 }
 
 .partners img {
-  width: calc(20%-20px);
   height: auto;
   filter: grayscale(100%);
 }
@@ -237,6 +250,7 @@ nav {
 
 .recentproject {
   max-width: 1100px;
+  width: 100%;
   padding: 80px 0px 80px 0px;
   display: flex;
   flex-direction: column;
@@ -247,8 +261,9 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -288,8 +303,9 @@ nav {
 /* TESTIMONIALS */
 
 .testimonials {
-  max-width: 1200px;
-  padding: 80px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 80px 0;
   margin: 80px 0px;
   display: flex;
   flex-direction: column;
@@ -302,10 +318,12 @@ nav {
 }
 
 .quote-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 104px;
+  gap: 80px;
 }
 
 .testimonials h3 {
@@ -316,7 +334,6 @@ nav {
 .quote {
   color: #ffc600;
   text-align: center;
-  width: 590px;
 }
 
 .kristin {
@@ -381,6 +398,7 @@ nav {
 
 .ourservices {
   max-width: 1100px;
+  width: 100%;
   padding: 80px 0px 80px 0px;
   display: flex;
   flex-direction: column;
@@ -391,8 +409,9 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .services-card {
@@ -436,8 +455,9 @@ nav {
 
 .subscribe {
   background-color: #FFC600;
-  max-width: 1200px;
-  padding: 80px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 80px 0;
   margin: 80px 0px;
   display: flex;
   flex-direction: column;
@@ -449,6 +469,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .questions p {
@@ -456,6 +477,7 @@ nav {
 }
 
 .input {
+  max-width: 800px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -464,7 +486,7 @@ nav {
 
 .email {
   height: 80px;
-  width: 390px;
+  width: 100%;
   background-color: #ffffff;
   padding-left: 24px;
   display: flex;
@@ -475,7 +497,7 @@ nav {
 .email input[type="email"] {
   border: none;
   height: 70px;
-  width: 300px;
+  width: 100%;
 }
 
 .envelope {
@@ -548,4 +570,294 @@ footer {
 .s-links li {
   width: 105px;
   text-align: left;
+}
+
+
+/*------------------------------------------------*/
+/* MEDIA QUERY */
+
+
+/* TABLET */
+
+@media screen and (max-width: 780px) {
+
+  body {
+    margin: 24px 24px;
+  }
+
+  nav {
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: none;
+    color: #072ac8;
+    font-size: 24px;
+    border: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hero-images {
+    width: 50%;
+    position: relative;
+  }
+
+  .hero-title {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .hero-description {
+    margin: 0;
+    padding: 24px 0px 32px;
+    text-align: center;
+  }
+  
+  .hero-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .partners {
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 24px;
+  }
+
+  .recentproject {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .quote-container {
+    gap: 40px;
+  }
+
+  .avatar1, .avatar2, .avatar3, .avatar4 {
+    display: none;
+  }
+
+  .testimonials {
+    padding: 40px 0px;
+  }
+
+  .ourservices {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .subscribe {
+    padding: 40px 0;
+    margin: 40px 0px;
+    gap: 32px;
+  }
+
+  .input {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe button {
+    width: 300px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 390px) {
+
+  body {
+    margin: 16px 16px;
+  }
+
+  nav {
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: none;
+    color: #072ac8;
+    font-size: 24px;
+    border: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hero-images {
+    width: 50%;
+    position: relative;
+  }
+
+  .hero-title {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .hero-description {
+    margin: 0;
+    padding: 24px 0px 32px;
+    text-align: center;
+  }
+  
+  .hero-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .partners {
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 24px;
+  }
+
+  .recentproject {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .quote-container {
+    gap: 40px;
+  }
+
+  .avatar1, .avatar2, .avatar3, .avatar4 {
+    display: none;
+  }
+
+  .testimonials {
+    padding: 40px 0px;
+  }
+
+  .ourservices {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .subscribe {
+    padding: 40px 0;
+    margin: 40px 0px;
+    gap: 32px;
+  }
+
+  .input {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe button {
+    width: 300px;
+  }
+
 }
