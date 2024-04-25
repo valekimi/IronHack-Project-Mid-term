@@ -1,24 +1,24 @@
 # IRONHACK - FRONT END
 
-### Welcome to [Valekimi first deploy]!
+### Welcome to "Valekimi first deploy"!
 
 ## OVERVIEW
 
 Website for a fictional web design company (The design has been provided by Ironhack).
 This includes a few pages:
-a home page
-a project page
-a contact page with a form
-a 404 error page
+- a home page
+- a project page
+- a contact page with a form
+- a 404 error page
 
 ## Technical Specifications
 - HTML, CSS
 - Programming Language: [JavaScript]
 
-## live website:
+## Live website
 https://valekimifirstdeploy.netlify.app
 
-## GitHub Repository
+## Repository
 [GitHub](https://github.com/valekimi/IronHack-Project-Mid-term)
 
 ## Credits
@@ -28,7 +28,7 @@ https://valekimifirstdeploy.netlify.app
 
 ====================================
 
-**## Main Features**
+## Main Features
 
 ### with CSS
 
@@ -46,6 +46,10 @@ https://valekimifirstdeploy.netlify.app
 
 ![alt text](/readme/Card%20over%20image.png)
 
+- When in Project or Contact page, if we click in the menu in pages we did not implemented, we get to a page 404
+
+
+
 
 ### with JavaScript
 
@@ -62,7 +66,7 @@ https://valekimifirstdeploy.netlify.app
 
 ====================================
 
-**## Responsiveness**
+## Responsiveness
 
 I created 2 Media Queries:
 - width 780px, more adapt for tablets
@@ -91,7 +95,7 @@ The main differences from the full width are the following:
 
 ====================================
 
-**## Backlog**
+## Backlog
 
 I was pretty surprised to be able to accomplished even half of what i did! So I am quite satisfied about the result.
 However, if I would have had more time, i would have:
@@ -99,6 +103,7 @@ However, if I would have had more time, i would have:
 - connected the burger menu when in responsive screen
 - adjusted those sections in home which are larger than the other saction (testimonials and subscribe)
 - made the footer responsive
+- make sure that all the body stays in the center of the page
 - made everything pixel perfect
 - checked alternatives of the used functions in Javascript
 
