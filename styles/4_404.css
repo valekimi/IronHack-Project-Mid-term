@@ -4,10 +4,8 @@ body {
   margin: 80px 100px;
   background-color: #f4f6fc;
   font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  /* margin: 0 auto; with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -156,4 +154,73 @@ nav {
 
 .active-link {
   color: #072ac8;
+}
+
+
+.hamburger-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.pagenotfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error h1 {
+  margin-bottom: 24px;
+}
+
+.error p {
+  color: #6b708d;
+  text-align: center;
+}
+
+/*------------------------------------------------*/
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media screen and (max-width: 780px) {
+  body {
+    margin: 24px 24px;
+  }
+
+  nav {
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: none;
+    color: #072ac8;
+    font-size: 24px;
+    border: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 }

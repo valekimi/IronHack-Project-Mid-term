@@ -4,10 +4,8 @@ body {
   margin: 80px 100px;
   background-color: #f4f6fc;
   font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  /* margin: 0 auto; with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -161,6 +159,13 @@ nav {
   color: #072ac8;
 }
 
+.hamburger-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
 
 /*------------------------------------------------*/
 /*FORM*/
@@ -171,130 +176,206 @@ nav {
 }
 
 #contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .name {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .email-phone {
-    width: 100%;
-    display: flex;
-    gap: 32px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
 }
 
 .email-address {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .phone-number {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .long-message {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 textarea {
-    background-color: #E6E9F1;
-    border: none;
-    padding-top: 22px;
-    padding-left: 24px;
-    font-family: "Roboto";
+  background-color: #e6e9f1;
+  border: none;
+  padding-top: 22px;
+  padding-left: 24px;
+  font-family: "Roboto";
 }
 
 .name input,
 .email-address input,
 .phone-number input {
-    background-color: #E6E9F1;
-    height: 80px;
-    border: none;
-    padding-left: 24px;
-    display: flex;
-    align-items: center;
-    font-family: "Roboto";
+  background-color: #e6e9f1;
+  height: 80px;
+  border: none;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
 }
 
 form button {
-    height: 80px;
-    width: 100%;
-    background-color: #072ac8;
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
+  height: 80px;
+  width: 100%;
+  background-color: #072ac8;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
 
-  .error-message {
-    color: #ff0000;
-    font-size: 14px;
-  }
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(165, 235, 178);
+  color: #292e47;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
 
 /*------------------------------------------------*/
 /* FOOTER */
 
 footer {
-    max-width: 1100px;
-    color: #6b708d;
-    font-size: 17px;
-    font-weight: 300;
-    display: flex;
+  max-width: 1100px;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.logo-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 240px;
+}
+
+.logo-address img {
+  height: 30px;
+}
+
+.logo-address p {
+  margin: 0;
+  padding: 16px 0px 0px 0px;
+}
+
+.f-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.s-links {
+  width: 435px;
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+}
+
+.s-links li {
+  width: 105px;
+  text-align: left;
+}
+
+/*------------------------------------------------*/
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media screen and (max-width: 780px) {
+  body {
+    margin: 24px 24px;
+  }
+
+  nav {
+    padding-bottom: 40px;
     justify-content: space-between;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
     align-items: center;
-    padding-top: 80px;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: none;
+    color: #072ac8;
+    font-size: 24px;
+    border: none;
   }
-  
-  .logo-address {
+
+  .menu {
+    display: none;
+  }
+
+  .logo-container {
     display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .email-phone {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 240px;
   }
-  
-  .logo-address img {
-    height: 30px;
+
+  .form h1 {
+    font-size: 40px;
   }
-  
-  .logo-address p {
-    margin: 0;
-    padding: 16px 0px 0px 0px;
-  }
-  
-  .f-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .s-links {
-    width: 435px;
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-  }
-  
-  .s-links li {
-    width: 105px;
-    text-align: left;
-  }
-  
+}

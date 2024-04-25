@@ -5,7 +5,7 @@ body {
   background-color: #f4f6fc;
   font-family: "Roboto";
   max-width: 1100px;
-  margin: 0 auto; /*with this all the items are centered*/
+  /* margin: 0 auto; with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -159,6 +159,14 @@ nav {
   color: #072ac8;
 }
 
+.hamburger-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 /*------------------------------------------------*/
 /* PROJECT DETAILS */
 
@@ -216,8 +224,9 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -280,6 +289,7 @@ nav {
 }
 
 .input {
+  max-width: 800px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -288,7 +298,7 @@ nav {
 
 .email {
   height: 80px;
-  width: 390px;
+  width: 100%;
   background-color: #ffffff;
   padding-left: 24px;
   display: flex;
@@ -299,7 +309,7 @@ nav {
 .email input[type="email"] {
   border: none;
   height: 70px;
-  width: 300px;
+  width: 100%;
 }
 
 .envelope {
@@ -370,4 +380,73 @@ footer {
 .s-links li {
   width: 105px;
   text-align: left;
+}
+
+
+/*------------------------------------------------*/
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media screen and (max-width: 780px) {
+  body {
+    margin: 24px 24px;
+  }
+
+  nav {
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: none;
+    color: #072ac8;
+    font-size: 24px;
+    border: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .topic-date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-asset {
+    height: auto;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .subscribe {
+    padding: 40px 0;
+    margin: 40px 0px;
+    gap: 32px;
+  }
+
+  .input {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+  
 }

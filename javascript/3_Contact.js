@@ -17,7 +17,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 function showError(element) {
-    element.style.borderColor = '#FF0000'; // somehow this is not applied
+    console.log(element);
+    element.style.border = '2px solid #ff0000';
     const errorMessageElement = element.nextElementSibling;
 
     if (errorMessageElement && errorMessageElement.classList.contains('error-message')) {
@@ -40,3 +41,14 @@ document.querySelectorAll('input[required], textarea[required]').forEach(functio
         }
     });
 });
+
+
+//===============================
+/* SNACKBAR VALIDATIONS */
+
+document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    var snackbar = document.getElementById("snackbar");
+    snackbar.className = "show";
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+  });

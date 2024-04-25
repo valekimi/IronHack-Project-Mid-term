@@ -2,10 +2,12 @@
 
 # PROJECT MID TERM
 
-Website for a fictional web design company. This includes a few pages:
+Website for a fictional web design company. The design has been provided by Ironhack.
+This includes a few pages:
 a home page
-a project page and
-a contact page with a form.
+a project page
+a contact page with a form
+a 404 error page
 
 ## Technical Specifications
 - HTML, CSS
@@ -19,11 +21,11 @@ a contact page with a form.
 ====================================
 DAY 1
 
-Creation of all the pages in HTML, CSS.
-Stored all the images in the Asset folder.
+In Visual Studio Code: set up the pages in HTML, CSS, JS.
+Stored all the images in the Assets folder.
 
 ## HOME - PAGE
-Built the HTML and CSS
+Built the HTML and CSS.
 
 Reflections and things i found important or hard to achieve:
 
@@ -85,19 +87,37 @@ Reflections and things i found important or hard to achieve:
 DAY 3
 
 ## VALIDATION - Contact Form
+Created the function in Javascript
 
 Reflections and things i found important or hard to achieve:
 
 - To display a message "alert" below the input, it is necessary to add a div below the input
-- i managed to assign the error alert if an input field has not been filled, however I didn't manage to set a red border of the input when the user gets the error message.
+- i managed to assign the error alert if an input field has not been filled, however I didn't manage to set a red border of the input when the user gets the error message. - Issue solved thanks to the help of Jarko. I was trying to set in the borderColor and changing just the color, however since the original imputs do not have borders, i had to set border with size, color and style.
 
 
 ## MEDIA QUERY -  Home
 
-- i was able to create the burger menu when the screen is smaller then 780px
+- i was able to create the burger menu when the screen is smaller then 780px (tablet)
 - Couldn't understand why the justify content(Space between) was not working - Prof. Jarko advice to do not use display:flex in body as this trigger mistakes in the FE.
+- created additional media query for screens smaller then 390px (mobile), but the most is very simir to the tablet configuration.
 
 
 ====================================
 DAY 4
 
+## MEDIA QUERY -  Project / Contact
+
+- applied the media query to all the other pages
+
+## 404 Page
+
+- created the HTML and CSS
+- applied media query
+- connected with the other pages - error page comes when user clicks on Services (in menu) when in the Open project page. Same happens when in Contact page, clicking in menu on "projects" and "services.
+
+## Successful Snackbar
+
+- implemented the html and css for when the user submit the form correctly.
+- this will appear at the bottom of the page and will be visible for 3 seconds.
+
+## Set Website live - DEPLOY with NETLIFY

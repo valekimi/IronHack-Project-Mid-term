@@ -5,7 +5,7 @@ body {
   background-color: #f4f6fc;
   font-family: "Roboto";
   max-width: 1100px;
-  margin: 0 auto; /*with this all the items are centered*/
+  /* margin: 0 auto; with this all the items are centered*/
 }
 
 /* BUTTONS */
@@ -163,7 +163,7 @@ nav {
   color: #072ac8;
 }
 
-.hamburger-menu-btn{
+.hamburger-menu-btn {
   display: none;
 }
 
@@ -245,6 +245,10 @@ nav {
   filter: grayscale(100%);
 }
 
+.partners img:hover {
+  filter: none;
+}
+
 /*------------------------------------------------*/
 /* PROJECTS */
 
@@ -270,7 +274,6 @@ nav {
   background-color: #ffffff;
   box-shadow: 0 32px 77px rgba(0, 0, 0, 0.1);
   max-width: 340px;
-  height: 444px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s;
@@ -442,8 +445,8 @@ nav {
 }
 
 .blueicon img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .text-r {
@@ -454,7 +457,7 @@ nav {
 /* SUBSCRIBE */
 
 .subscribe {
-  background-color: #FFC600;
+  background-color: #ffc600;
   max-width: 1100px;
   width: 100%;
   padding: 80px 0;
@@ -521,13 +524,12 @@ nav {
   padding: 0;
 }
 
-
-
 /*------------------------------------------------*/
 /* FOOTER */
 
 footer {
   max-width: 1100px;
+  width: 100%;
   color: #6b708d;
   font-size: 17px;
   font-weight: 300;
@@ -572,15 +574,12 @@ footer {
   text-align: left;
 }
 
-
 /*------------------------------------------------*/
 /* MEDIA QUERY */
-
 
 /* TABLET */
 
 @media screen and (max-width: 780px) {
-
   body {
     margin: 24px 24px;
   }
@@ -601,7 +600,7 @@ footer {
     font-size: 24px;
     border: none;
   }
-  
+
   .menu {
     display: none;
   }
@@ -631,13 +630,13 @@ footer {
     text-align: center;
     font-size: 40px;
   }
-  
+
   .hero-description {
     margin: 0;
     padding: 24px 0px 32px;
     text-align: center;
   }
-  
+
   .hero-ctas {
     display: flex;
     justify-content: center;
@@ -676,7 +675,10 @@ footer {
     gap: 40px;
   }
 
-  .avatar1, .avatar2, .avatar3, .avatar4 {
+  .avatar1,
+  .avatar2,
+  .avatar3,
+  .avatar4 {
     display: none;
   }
 
@@ -708,22 +710,19 @@ footer {
   }
 
   .input {
-    width: 300px;
+    width: 80%;
     flex-direction: column;
     align-items: center;
   }
 
   .subscribe button {
-    width: 300px;
+    width: 100%;
   }
-
 }
-
 
 /* MOBILE */
 
 @media screen and (max-width: 390px) {
-
   body {
     margin: 16px 16px;
   }
@@ -744,7 +743,7 @@ footer {
     font-size: 24px;
     border: none;
   }
-  
+
   .menu {
     display: none;
   }
@@ -774,13 +773,13 @@ footer {
     text-align: center;
     font-size: 40px;
   }
-  
+
   .hero-description {
     margin: 0;
     padding: 24px 0px 32px;
     text-align: center;
   }
-  
+
   .hero-ctas {
     display: flex;
     justify-content: center;
@@ -819,7 +818,10 @@ footer {
     gap: 40px;
   }
 
-  .avatar1, .avatar2, .avatar3, .avatar4 {
+  .avatar1,
+  .avatar2,
+  .avatar3,
+  .avatar4 {
     display: none;
   }
 
@@ -848,16 +850,6 @@ footer {
     padding: 40px 0;
     margin: 40px 0px;
     gap: 32px;
-  }
-
-  .input {
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subscribe button {
-    width: 300px;
   }
 
 }
