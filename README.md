@@ -1,8 +1,10 @@
 # IRONHACK - FRONT END
 
-# PROJECT MID TERM
+### Welcome to [Valekimi first deploy]!
 
-Website for a fictional web design company. The design has been provided by Ironhack.
+## OVERVIEW
+
+Website for a fictional web design company (The design has been provided by Ironhack).
 This includes a few pages:
 a home page
 a project page
@@ -13,111 +15,98 @@ a 404 error page
 - HTML, CSS
 - Programming Language: [JavaScript]
 
+## live website:
+https://valekimifirstdeploy.netlify.app
+
+## GitHub Repository
+[GitHub](https://github.com/valekimi/IronHack-Project-Mid-term)
+
 ## Credits
 - Jarko Garrido - Prof. Bootcamp Front End
 - Ironhack Barcelona
 
 
 ====================================
-DAY 1
 
-In Visual Studio Code: set up the pages in HTML, CSS, JS.
-Stored all the images in the Assets folder.
+**## Main Features**
 
-## HOME - PAGE
-Built the HTML and CSS.
+### with CSS
 
-Reflections and things i found important or hard to achieve:
+- All pages are composed by a menu, where the active pages are highlighted in compare to the inactive ones.
 
-- understand structure and element of the page to start the files and the code structures.
-- setting styles from the beginning helps in working faster, also is it possible to the assign styles directly in html (ex. text and button styles)
-- display flex is basically applied in every section
-- floating images are tough to manage, still need to understand what is the best rule.
-Using postition:relative in the parent and position:absolute to the child and then set coordinates (top, left, ...)
-- if you dont set a background color for a button, it gives a gray by default
-- Headers always come with a own margin or padding, not always visible from inspect, how to avoid this?!
-- in inspect, showing layouts helps visually to adjust elements
-- I am still fighting with the width of the sections, maybe i set it incorrectly
+![alt text](/readme/Full%20Nav%20image.png)
 
 
-====================================
-DAY 2
+- Home Partners Logos are in grayscale but when hovering get the real color
 
-## CONTACT - PAGE
-Built the HTML and CSS
-
-Reflections and things i found important or hard to achieve:
-
-- the inputs have a placeholder text that by default is or "monospace" or another one, so I had to apply again the font family in the CSS tag
-- Input type can be declared also in CSS directly in this format: ex .email input[type="email"]
+![alt text](/readme/Logos%20image.png)
 
 
-## PROJECT 1 - PAGE
-Built the HTML and CSS
+- All the cards, projects and services, have a shadow and they increase their size when on hover
 
-Reflections and things i found important or hard to achieve:
-
-- To do a blur effect of the main image, it is necessary to create 2 divs containing the same image, one will be position relative and the other absolute, with filter: blur and also opacity if needed. Also, div with the effect needs to be placed in the HTML before than the main image, otherwise the effect will be applied on top. 
-- fetch API.... help!
-- ok i manage to fetch the first part, here i discovered that you can already give sizes to the image and remove it from css. This steps given me headache as i couldn't understand why the image was not adapting to the size i pre-set in css.
-- i am having some issue in adapting the blur background to the size i need as seems not working in the same way of the main image
+![alt text](/readme/Card%20over%20image.png)
 
 
-## FETCH - Project 1
-Connected the DOM
+### with JavaScript
 
-Reflections and things i found important or hard to achieve:
+- in Project Page, the informations of the different projects are taken from a given endpoint url, which i fetched with JavaScript to be able to retrieve the data in the order i needed. First project has been taken has a position [3], the other 3 in the card has been taken in a reverse order starting from position [1].
 
-- fetched the provided endpoint URL for the project 1
-- Here i directly asked to load the project data in position [3]
-- and load every object propriety using the Id
-- here i could apply the correct shadow to the project cover, Jarko helped me out and made me realize i was applying the css to the parent and not to the child.
+- Contact form has been validated in Javascript with a function to give an error message if the user leaves the imput empty.
 
+![alt text](/readme/Form%20image.png)
 
-## FETCH - Other Projects
-Connected the DOM
+- Extra: implemented a Successful snackbar (in HTML, CSS and Javascript) for when the user submit correctly the form.
 
-Reflections and things i found important or hard to achieve:
-
-- fetched the provided endpoint URL
-- with a query selector i asked to assign data in a revers order starting from position [1]
+![alt text](/readme/Snackbar%20image.png)
 
 
 ====================================
-DAY 3
 
-## VALIDATION - Contact Form
-Created the function in Javascript
+**## Responsiveness**
 
-Reflections and things i found important or hard to achieve:
+I created 2 Media Queries:
+- width 780px, more adapt for tablets
+- width 390px, more adapt for mobile
 
-- To display a message "alert" below the input, it is necessary to add a div below the input
-- i managed to assign the error alert if an input field has not been filled, however I didn't manage to set a red border of the input when the user gets the error message. - Issue solved thanks to the help of Jarko. I was trying to set in the borderColor and changing just the color, however since the original imputs do not have borders, i had to set border with size, color and style.
+The main differences from the full width are the following:
 
+- ### (Home) - Hero
+ the positioning of the image change to the top of the text and all together is more central aligned.
 
-## MEDIA QUERY -  Home
+- ### (Home) - Quote section
+ the emoji are no longer visible
 
-- i was able to create the burger menu when the screen is smaller then 780px (tablet)
-- Couldn't understand why the justify content(Space between) was not working - Prof. Jarko advice to do not use display:flex in body as this trigger mistakes in the FE.
-- created additional media query for screens smaller then 390px (mobile), but the most is very simir to the tablet configuration.
+- ### (Home+Project) - Subscription
+ input and button go vertically
+
+- ### (Home+Project) - Project and Service Cards
+ the orientation change, from horizontal to vertical
+
+- ### (Contact) - Form inputs
+ all the inputs are one below the other taking the full width
+
+- ### (All Pages) - Nav
+ the menu disappears and gives visibility to a burger menu instead
 
 
 ====================================
-DAY 4
 
-## MEDIA QUERY -  Project / Contact
+**## Backlog**
 
-- applied the media query to all the other pages
+I was pretty surprised to be able to accomplished even half of what i did! So I am quite satisfied about the result.
+However, if I would have had more time, i would have:
 
-## 404 Page
+- connected the burger menu when in responsive screen
+- adjusted those sections in home which are larger than the other saction (testimonials and subscribe)
+- made the footer responsive
+- made everything pixel perfect
+- checked alternatives of the used functions in Javascript
 
-- created the HTML and CSS
-- applied media query
-- connected with the other pages - error page comes when user clicks on Services (in menu) when in the Open project page. Same happens when in Contact page, clicking in menu on "projects" and "services.
+====================================
 
-## Successful Snackbar
+## The End
 
-- implemented the html and css for when the user submit the form correctly.
-- this will appear at the bottom of the page and will be visible for 3 seconds.
-
-## Set Website live - DEPLOY with NETLIFY
+I can tell i really enjoyed developing my first website, was a fulfilling challenge.
+If you have any questions or suggestions, feel free to reach out to me.
+Thanks for reading,
+Valekimi 🙆🏻‍♀️
